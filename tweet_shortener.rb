@@ -14,3 +14,10 @@ def word_substituter(string)
   }
   string.split(" ").map{ |w| dictionary.key?(w.downcase.to_sym)? dictionary[w.downcase.to_sym] : w}.join(" ") 
 end 
+
+def bulk_tweet_shortener(tweetArray)
+  tweetArray.each do |tweet|
+    x = word_substituter(tweet) 
+    puts x 
+  end 
+end 
