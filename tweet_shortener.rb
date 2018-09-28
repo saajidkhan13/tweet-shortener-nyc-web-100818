@@ -9,7 +9,7 @@ def word_substituter(string)
     :four => "4",
     :be => "b",
     :you => "u",
-    :at => "@"
+    :at => "@",
     :and => "&"
   }
   string.split(" ").map{ |w| dictionary.key?(w.downcase.to_sym)? dictionary[w.downcase.to_sym] : w}.join(" ") 
