@@ -14,6 +14,3 @@ def word_substituter(string)
   }
   string.split(" ").map{ |w| dictionary.key?(w.downcase.to_sym)? dictionary[w.downcase.to_sym] : w}.join(" ") 
 end 
-end 
-  
-  }
